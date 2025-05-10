@@ -126,3 +126,4 @@ test-results/
 cypress/screenshots/
 cypress/videos/
 
+generated/**

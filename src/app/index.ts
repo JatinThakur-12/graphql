@@ -13,11 +13,13 @@ export async function initServer() {
         typeDefs: `
             type Query {
                 hello: String
-                }
+                sayHelloToMe(name: String!):String
+            }
         `,
         resolvers: {
             Query: {
                 hello: () => "Hello from GraphQL",
+                sayHelloToMe: (parent: any, { name }: { name: string }) => null,
             },
         },
     });
